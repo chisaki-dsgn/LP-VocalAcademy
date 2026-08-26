@@ -1,3 +1,50 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
 
+body {
+  font-family: "inter", "noto sans jp", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #173250;
+  background-color: #fff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  h2::before {
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  h2::after {
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: currentColor;
+    margin-left: 1.5rem;
+  }
+}
+
+.l-inner {
+  max-width: 960px;
+  padding: 1rem;
+  margin-inline: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
