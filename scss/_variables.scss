@@ -1,0 +1,22 @@
+// 変数
+$color-primary : #173250;
+$color-main : #F9F9F9;
+$color-accent-dark: #BE9D52;
+$color-accent-light: #EDDC95;
+$text-color-main: #173250;
+$text-color-sub: #424E5B;
+$text-color-inversion: #fff;
+
+// メディアクエリ
+$bp: 768px;
+@mixin mq{
+    @media(min-width:($bp)){
+    @content;
+    }
+}
+
+// font-sizeを計算する関数
+@use "sass:math";
+@function rem($px){
+    @return math.div($px, 16) * 1rem;
+}
