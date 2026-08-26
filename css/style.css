@@ -47,4 +47,78 @@ h2 {
   margin-inline: auto;
 }
 
+.l-header {
+  background-color: #F9F9F9;
+  width: 100%;
+  height: 60px;
+  padding-inline: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .l-header {
+    height: 80px;
+  }
+}
+.l-header__logo {
+  height: 100%;
+}
+.l-header__logo a {
+  display: inline-block;
+  height: 100%;
+}
+.l-header__logo img {
+  height: 100%;
+  width: auto;
+}
+.l-header__nav {
+  padding-block: 10px;
+  display: flex;
+  gap: 20px;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .l-header__nav {
+    padding-block: 15px;
+  }
+}
+
+.nav-list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .nav-list li {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  .nav-list li:hover {
+    opacity: 0.6;
+  }
+}
+
+.l-header__cta-btn {
+  display: block;
+  padding-inline: 15px;
+  line-height: 40px;
+  border-radius: 100px;
+  background: linear-gradient(#BE9D52, #EDDC95, #BE9D52);
+}
+@media (min-width: 768px) {
+  .l-header__cta-btn {
+    padding-inline: 30px;
+    line-height: 50px;
+  }
+}
+.l-header__cta-btn {
+  transition: scale 0.3s ease;
+}
+.l-header__cta-btn:hover {
+  scale: 1.05;
+}
+
 /*# sourceMappingURL=style.css.map */
