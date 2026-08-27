@@ -1,0 +1,42 @@
+@use '../foundation/variables' as *;
+
+.mv{
+    width: 100%;
+    height: 100dvh;
+    color: $text-color-inversion;
+    position: relative;
+    &__title-sub{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        margin: rem(16);
+        font-size: rem(36);
+        font-weight: 900;
+        text-shadow: 3px 3px 10px $color-primary;
+        @include mq{
+            font-size: rem(52);
+            transform: translateX(0);
+        }
+    }
+    &__title-main{
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        margin: rem(16);
+        font-size: rem(36);
+        font-weight: 900;
+        text-shadow: 3px 3px 10px $color-primary;
+        span{
+            display: inline-block;
+        }
+        @include mq{
+            font-size: rem(52);
+            transform: translateX(0);
+        }
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
