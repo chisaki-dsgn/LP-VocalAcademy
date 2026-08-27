@@ -1,0 +1,72 @@
+@use '../foundation/variables' as *;
+
+.probrem{
+    background: linear-gradient(#999, #fff);
+    padding-block: 80px 60px;
+    @include mq{
+        padding-block: 100px 50px;
+    }
+    &__title{
+        color: $text-color-inversion;
+        border-bottom: none;
+        margin-bottom: 36px;
+        @include mq{
+            margin-bottom: 72px;
+        }
+        &::before,&::after{
+            content: none;
+        }
+    }
+}
+.list-bg{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    padding: rem(40);
+    background: url('../../img/probrem.png') no-repeat center/cover;
+    margin-bottom: 80px;
+    @include mq{
+        margin-bottom: 100px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: 60px;
+        clip-path: polygon(0 0,100% 0,50% 100%);
+        background-color: $color-primary;
+        @include mq{
+            width: 33%;
+            height: 70px;
+        }
+    }
+}
+.probrem-list{
+    position: absolute;
+    width: max-content;
+    max-width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    list-style-type: " ✓ ";
+    list-style-position: outside;
+    li{
+        margin-bottom: 5px;
+        color: $text-color-inversion;
+    }
+}
+.solution-lead{
+    text-align: center;
+    span{
+        font-weight: 700;
+        border-bottom: 3px solid $color-accent-dark;
+        font-size: rem(20);
+        @include mq{
+            font-size: rem(24);
+        }
+    }
+}
