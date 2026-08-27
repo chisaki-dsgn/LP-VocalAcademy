@@ -3,32 +3,34 @@
 .mv{
     width: 100%;
     height: 100dvh;
-    position: relative;
     color: $text-color-inversion;
-    &__sub-title{
+    position: relative;
+    &__title-sub{
         position: absolute;
-        top: 1em;
-        left: 1em;
-        font-size: rem(38);
+        top: 100px;
+        left: 0;
+        margin: rem(16);
+        font-size: rem(36);
         font-weight: 900;
+        text-shadow: 3px 3px 10px $color-primary;
         @include mq{
-            font-size: rem(60);
+            font-size: rem(52);
             transform: translateX(0);
         }
     }
-    &__title{
+    &__title-main{
         position: absolute;
-        bottom: 1em;
-        right: 1em;
-        left: 1em;
-        font-size: rem(38);
+        bottom: 100px;
+        right: 0;
+        margin: rem(16);
+        font-size: rem(36);
         font-weight: 900;
+        text-shadow: 3px 3px 10px $color-primary;
         span{
             display: inline-block;
         }
         @include mq{
-
-            font-size: rem(60);
+            font-size: rem(52);
             transform: translateX(0);
         }
     }
