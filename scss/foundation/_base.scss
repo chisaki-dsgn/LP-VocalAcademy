@@ -44,3 +44,11 @@ h2{
     padding: rem(16);
     margin-inline: auto;
 }
+.cta-btn{
+    border-radius: 100px;
+    background: linear-gradient($color-accent-dark, $color-accent-light, $color-accent-dark);
+    transition: scale .3s ease;
+    &:hover{
+        scale: 1.05;
+    }
+}
