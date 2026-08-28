@@ -24,6 +24,7 @@
         position: relative;
         background-color: $color-main;
         padding: 10px;
+        padding-right: 36px;
         box-shadow:inset 0 -3px 5px #1732503a;
         border-radius: 3px;
         &::after{
@@ -37,6 +38,18 @@
             right: 10px;
             translate: 0 -50%;
             transition: rotate .3s ease;
+        }
+    }
+    &__answer{
+        border-radius: 0 0 10px 10px;
+        border: 1px solid #0000002c;
+        border-top: none;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: height .3s ease, opacity .3s ease;
+        dd{
+            padding: 20px 10px;
         }
     }
 }
