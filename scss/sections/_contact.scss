@@ -1,0 +1,99 @@
+@use '../foundation/variables' as *;
+
+.contact{
+    background-color: $color-primary;
+    color: $text-color-inversion;
+    padding-block: 100px;
+    @include mq{
+        padding-block: 120px;
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 56px;
+        border-bottom: none;
+        @include mq{
+            margin-bottom: 42px;
+        }
+        &::before,&::after{
+            content: none;
+        }
+    }
+    &__desc{
+        text-align: center;
+        margin-bottom: 56px;
+        @include mq{
+            margin-bottom: 42px;
+        }
+        .sp-only{
+            @include mq{
+                display: none;
+            }
+        }
+    }
+}
+.contact-form{
+    &__group{
+        @include mq{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &:not(:last-child){
+            margin-bottom: 56px;
+            @include mq{
+                margin-bottom: 24px;
+            }
+        }
+    }
+    &__label{
+        display: block;
+        @include mq{
+            width: 17%;
+        }
+    }
+    &__input{
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        color: #333;
+        @include mq{
+            width: 82%;
+        }
+        &[name="user-text"]{
+            height: 180px;
+        }
+    }
+    &__radio{
+        @include mq{
+            width: 82%;
+            display: flex;
+            gap: 24px;
+        }
+        label{
+            display: block;
+        }
+        input{
+            appearance: auto;
+        }
+    }
+    &__btn{
+        display: block;
+        margin-inline: auto;
+        margin-top: 56px;
+        padding: 30px 40px;
+        font-size: rem(18);
+        font-weight: 600;
+        border-radius: 10px;
+        width: fit-content;
+        color: $color-primary;
+        @include mq{
+            margin-top: 42px;
+        }
+    }
+}
+.badge-required{
+    font-size: rem(12);
+    color: #ffcdcd;
+}

@@ -616,4 +616,116 @@ h2 {
   padding: 20px 10px;
 }
 
+.contact {
+  background-color: #173250;
+  color: #fff;
+  padding-block: 100px;
+}
+@media (min-width: 768px) {
+  .contact {
+    padding-block: 120px;
+  }
+}
+.contact__title {
+  text-align: center;
+  margin-bottom: 56px;
+  border-bottom: none;
+}
+@media (min-width: 768px) {
+  .contact__title {
+    margin-bottom: 42px;
+  }
+}
+.contact__title::before, .contact__title::after {
+  content: none;
+}
+.contact__desc {
+  text-align: center;
+  margin-bottom: 56px;
+}
+@media (min-width: 768px) {
+  .contact__desc {
+    margin-bottom: 42px;
+  }
+}
+@media (min-width: 768px) {
+  .contact__desc .sp-only {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.contact-form__group:not(:last-child) {
+  margin-bottom: 56px;
+}
+@media (min-width: 768px) {
+  .contact-form__group:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.contact-form__label {
+  display: block;
+}
+@media (min-width: 768px) {
+  .contact-form__label {
+    width: 17%;
+  }
+}
+.contact-form__input {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  color: #333;
+}
+@media (min-width: 768px) {
+  .contact-form__input {
+    width: 82%;
+  }
+}
+.contact-form__input[name=user-text] {
+  height: 180px;
+}
+@media (min-width: 768px) {
+  .contact-form__radio {
+    width: 82%;
+    display: flex;
+    gap: 24px;
+  }
+}
+.contact-form__radio label {
+  display: block;
+}
+.contact-form__radio input {
+  appearance: auto;
+}
+.contact-form__btn {
+  display: block;
+  margin-inline: auto;
+  margin-top: 56px;
+  padding: 30px 40px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 10px;
+  width: fit-content;
+  color: #173250;
+}
+@media (min-width: 768px) {
+  .contact-form__btn {
+    margin-top: 42px;
+  }
+}
+
+.badge-required {
+  font-size: 0.75rem;
+  color: #ffcdcd;
+}
+
 /*# sourceMappingURL=style.css.map */
