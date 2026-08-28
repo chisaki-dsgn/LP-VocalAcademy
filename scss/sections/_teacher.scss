@@ -1,0 +1,63 @@
+@use '../foundation/variables' as *;
+
+.teacher{
+    background: linear-gradient(#ffffff94),url('../../img/teacher-bg.png') no-repeat right center / cover;
+    padding-block: 80px;
+    @include mq{
+        padding-block: 120px;
+        background-position: center;
+    }
+    &__title{
+        margin-bottom: 55px;
+        @include mq{
+            margin-bottom: 100px;
+        }
+    }
+    &__detail{
+        @include mq{
+            display: flex;
+            gap: 36px;
+            align-items: center;
+        }
+    }
+    &__img{
+        width: 100%;
+        margin-bottom: 36px;
+        box-shadow: 3px 3px 2px #888;
+        @include mq{
+            margin-bottom: 0;
+            flex: 1 1 0;
+        }
+    }
+    &__body{
+        @include mq{
+            flex: 2 1 0;
+        }
+    }
+    &__name{
+        text-align: center;
+        font-weight: 600;
+        font-size: rem(20);
+        @include mq{
+            text-align: left;
+        }
+
+    }
+    &__position{
+        text-align: center;
+        font-size: rem(14);
+        margin-bottom: 22px;
+        @include mq{
+            text-align: left;
+        }
+    }
+    &__bio{
+        margin-bottom: 22px;
+        &-heading{
+            text-align: center;
+            @include mq{
+                text-align: left;
+            }
+        }
+    }
+}
