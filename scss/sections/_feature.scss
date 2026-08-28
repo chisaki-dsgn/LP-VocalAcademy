@@ -41,15 +41,6 @@
                     "body img";
             }
         }
-        @include mq{
-            display: grid;
-            gap: rem(10) rem(28);
-            grid-template-columns: 320px 1fr;
-            grid-template-rows: auto auto;
-            grid-template-areas: 
-                "img num"
-                "img body";
-        }
     }
 }
 .list-number{

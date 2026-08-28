@@ -349,15 +349,6 @@ h2 {
     grid-template-areas: "num img" "body img";
   }
 }
-@media (min-width: 768px) {
-  .feature li {
-    display: grid;
-    gap: 0.625rem 1.75rem;
-    grid-template-columns: 320px 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "img num" "img body";
-  }
-}
 
 .list-number {
   font-size: 10.625rem;
