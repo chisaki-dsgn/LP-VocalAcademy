@@ -1,0 +1,82 @@
+@use '../foundation/variables' as *;
+
+.plan{
+    padding-block: 100px;
+    background-color: $color-primary;
+    @include mq{
+        padding-block: 120px;
+    }
+    &__title{
+        margin-bottom: 46px;
+        color: $text-color-inversion;
+        @include mq{
+            margin-bottom: 100px;
+        }
+    }
+    &__list{
+        @include mq{
+            display: flex;
+            gap:clamp(50px, 3vw, 100px)
+        }
+    }
+}
+.plan-card{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    flex: 1;
+    @include mq{
+        margin-bottom: 0;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: rem(20);
+        margin-bottom: rem(16);
+        @include mq{
+            font-size: rem(24);
+        }
+    }
+}
+.plan-card-populer{
+    border: 6px solid $color-accent-dark;
+    position: relative;
+    .populer-label{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        aspect-ratio: 1/1;
+        border-radius: 100px;
+        color: #fff;
+        background: linear-gradient($color-accent-dark,$color-accent-light,$color-accent-dark);
+        top: 0;
+        right: 0;
+        translate: 0 -70%;
+        rotate: 10deg;
+        span{
+            text-shadow: 1px 1px 3px $color-accent-dark;
+            font-size: rem(24);
+            font-weight: 800;
+            @include mq{
+                font-size: rem(34);
+            }
+        }
+        @include mq{
+            translate: 0 -70%;
+        }
+    }
+}
+.plan-card__details{
+    .times{
+        margin-bottom: 16px;
+    }
+    .price{
+        margin-bottom: 16px;
+        span{
+            font-size: rem(24);
+            font-weight: 800;
+        }
+    }
+}
