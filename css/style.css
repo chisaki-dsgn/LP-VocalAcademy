@@ -612,7 +612,7 @@ h2 {
   opacity: 0;
   transition: height 0.3s ease, opacity 0.3s ease;
 }
-.faq__answer dd {
+.faq__answer div {
   padding: 20px 10px;
 }
 
