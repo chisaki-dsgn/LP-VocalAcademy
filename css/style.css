@@ -487,4 +487,77 @@ h2 {
   font-weight: 800;
 }
 
+.teacher {
+  background: linear-gradient(rgba(255, 255, 255, 0.5803921569)), url("../../img/teacher-bg.png") no-repeat right center/cover;
+  padding-block: 80px;
+}
+@media (min-width: 768px) {
+  .teacher {
+    padding-block: 120px;
+    background-position: center;
+  }
+}
+.teacher__title {
+  margin-bottom: 55px;
+}
+@media (min-width: 768px) {
+  .teacher__title {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .teacher__detail {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+  }
+}
+.teacher__img {
+  width: 100%;
+  margin-bottom: 36px;
+  box-shadow: 3px 3px 2px #888;
+}
+@media (min-width: 768px) {
+  .teacher__img {
+    margin-bottom: 0;
+    flex: 1 1 0;
+  }
+}
+@media (min-width: 768px) {
+  .teacher__body {
+    flex: 2 1 0;
+  }
+}
+.teacher__name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .teacher__name {
+    text-align: left;
+  }
+}
+.teacher__position {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-bottom: 22px;
+}
+@media (min-width: 768px) {
+  .teacher__position {
+    text-align: left;
+  }
+}
+.teacher__bio {
+  margin-bottom: 22px;
+}
+.teacher__bio-heading {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .teacher__bio-heading {
+    text-align: left;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
