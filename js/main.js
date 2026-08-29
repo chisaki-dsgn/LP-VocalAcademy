@@ -1,3 +1,8 @@
+// featureスライドイン
+
+
+
+// faqアコーディオン
 const triggers = document.querySelectorAll('.js-accordion-trigger');
 
 triggers.forEach(trigger =>{
