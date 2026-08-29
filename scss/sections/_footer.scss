@@ -15,7 +15,7 @@
         }
     }
     &__logo{
-        width: 200px;
+        display: block;
         margin-inline: auto;
         margin-bottom: 64px;
         @include mq{
