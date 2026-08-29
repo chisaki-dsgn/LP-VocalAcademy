@@ -1,0 +1,52 @@
+@use '../foundation/variables' as *;
+
+.l-footer{
+    background-color: $color-main;
+    text-align: center;
+    &__body{
+        padding-block: 70px 80px;
+        @include mq{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &>*{
+                flex: 1;
+            }
+        }
+    }
+    &__logo{
+        width: 200px;
+        margin-inline: auto;
+        margin-bottom: 64px;
+        @include mq{
+            margin-bottom: 0;
+        }
+        img{
+            max-width: 200px;
+            margin-inline: auto;
+        }
+    }
+    &__address{
+        margin-bottom: 64px;
+        @include mq{
+            margin-bottom: 0;
+        }
+    }
+    &__sns-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        &-img{
+            width: 24px;
+            &.youtube{
+                width: 30px;
+            }
+        }
+    }
+    &__copy{
+        display: block;
+        font-size: rem(12);
+        color: #757575;
+    }
+}
