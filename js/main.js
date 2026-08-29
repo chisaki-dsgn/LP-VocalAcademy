@@ -1,3 +1,21 @@
+// featureスライドイン
+const slideTriggers = document.querySelectorAll('.js-slidein');
+
+const observer = new IntersectionObserver((entries,observer)=>{
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('is-active');
+            observer.unobserve(entry.target);
+        }
+    });
+});
+
+slideTriggers.forEach(trigger=>{
+    observer.observe(trigger);
+});
+
+
+// faqアコーディオン
 const triggers = document.querySelectorAll('.js-accordion-trigger');
 
 triggers.forEach(trigger =>{

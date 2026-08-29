@@ -323,6 +323,7 @@ h2 {
 .feature {
   background-color: #F9F9F9;
   padding-block: 100px;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .feature {
@@ -337,16 +338,24 @@ h2 {
     margin-bottom: 150px;
   }
 }
-.feature li:not(:last-child) {
+.feature .js-slidein {
+  transition: opacity 0.8s ease, translate 0.8s ease, visibility 0.8s ease;
+}
+.feature .js-slidein:not(:last-child) {
   margin-bottom: 62px;
 }
 @media (min-width: 768px) {
-  .feature li:not(:last-child) {
+  .feature .js-slidein:not(:last-child) {
     margin-bottom: 70px;
   }
 }
+.feature .js-slidein:nth-child(odd) {
+  opacity: 0;
+  visibility: hidden;
+  translate: 50vw 0;
+}
 @media (min-width: 768px) {
-  .feature li:nth-child(odd) {
+  .feature .js-slidein:nth-child(odd) {
     display: grid;
     gap: 0.625rem 1.75rem;
     grid-template-columns: 320px 1fr;
@@ -354,14 +363,24 @@ h2 {
     grid-template-areas: "img num" "img body";
   }
 }
+.feature .js-slidein:nth-child(even) {
+  opacity: 0;
+  visibility: hidden;
+  translate: -50vw 0;
+}
 @media (min-width: 768px) {
-  .feature li:nth-child(even) {
+  .feature .js-slidein:nth-child(even) {
     display: grid;
     gap: 0.625rem 1.75rem;
     grid-template-columns: 1fr 320px;
     grid-template-rows: auto auto;
     grid-template-areas: "num img" "body img";
   }
+}
+.feature .js-slidein.is-active {
+  translate: 0 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .list-number {
