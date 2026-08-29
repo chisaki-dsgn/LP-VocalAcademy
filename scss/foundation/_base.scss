@@ -11,6 +11,12 @@ body{
     color: $text-color-main;
     background-color: #fff;
 }
+main{
+    padding-top: 60px;
+    @include mq{
+        padding-top: 80px;
+    }
+}
 img{
     display: block;
     width: 100%;
@@ -50,7 +56,7 @@ h2{
 }
 .l-inner{
     max-width: 960px;
-    padding: rem(16);
+    padding-inline: rem(16);
     margin-inline: auto;
 }
 .cta-btn{
