@@ -3,6 +3,7 @@
 .feature{
     background-color: $color-main;
     padding-block: 100px;
+    overflow: hidden;
     @include mq{
         padding-block: 150px;
     }
@@ -12,8 +13,8 @@
             margin-bottom: 150px;
         }
     }
-    li{
-        transition: opacity 0.8s ease, translate 0.8s ease visibility .8s ease;
+    .js-slidein{
+        transition: opacity 0.8s ease, translate 0.8s ease, visibility .8s ease;
         &:not(:last-child){
             margin-bottom: 62px;
             @include mq{
@@ -23,7 +24,7 @@
         &:nth-child(odd){
             opacity: 0;
             visibility: hidden;
-            translate: calc(100vw+100%) 0;
+            translate: 50vw 0;
             @include mq{
                 display: grid;
                 gap: rem(10) rem(28);
@@ -37,7 +38,7 @@
         &:nth-child(even){
             opacity: 0;
             visibility: hidden;
-            translate: 0 calc(100vw+100%);
+            translate: -50vw 0;
             @include mq{
                 display: grid;
                 gap: rem(10) rem(28);
@@ -47,6 +48,11 @@
                     "num img"
                     "body img";
             }
+        }
+        &.is-active{
+            translate: 0 0;
+            opacity: 1;
+            visibility: visible;
         }
     }
 }
@@ -85,15 +91,5 @@
     }
     &__text{
         color: $text-color-sub;
-    }
-}
-
-.js-slidein-trigger{        
-    &.is-active{
-        .js-slidein{
-            translate: 0 0;
-            opacity: 1;
-            visibility: visible;
-        }
     }
 }
