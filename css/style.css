@@ -818,4 +818,59 @@ h2 {
   color: #757575;
 }
 
+.p-thanks {
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  .p-thanks {
+    padding-top: 80px;
+  }
+}
+
+.thanks {
+  max-width: 800px;
+  padding-block: 50px;
+}
+@media (min-width: 768px) {
+  .thanks {
+    padding-block: 100px;
+  }
+}
+.thanks__title {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 768px) {
+  .thanks__title {
+    font-size: 1.5rem;
+  }
+}
+.thanks__message {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+.thanks__note {
+  color: #424E5B;
+  font-size: 0.75rem;
+  margin-bottom: 2.1875rem;
+}
+.thanks__btn-area {
+  text-align: center;
+}
+.thanks__btn-area .back-btn {
+  display: inline-block;
+  padding-inline: 15px;
+  border: 2px solid #173250;
+  border-radius: 5px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #173250;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.thanks__btn-area .back-btn:hover {
+  background-color: #fff;
+  color: #173250;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+@use '../foundation/variables' as *;
+
+.p-thanks{
+    padding-top: 60px;
+    @include mq{
+        padding-top: 80px;
+    }
+}
+.thanks{
+    max-width: 800px;
+    padding-block: 50px;
+    @include mq{
+        padding-block: 100px;
+    }
+    &__title{
+        text-align: center;
+        font-size: rem(20);
+        margin-bottom: rem(30);
+        @include mq{
+            font-size: rem(24);
+        }
+    }
+    &__message{
+        text-align: center;
+        margin-bottom: rem(30);
+    }
+    &__note{
+        color: $text-color-sub;
+        font-size: rem(12);
+        margin-bottom: rem(35);
+    }
+    &__btn-area{
+        text-align: center;
+        .back-btn{
+            display: inline-block;
+            padding-inline: 15px;
+            border: 2px solid $color-primary;
+            border-radius: 5px;
+            line-height: 50px;
+            color: $text-color-inversion;
+            background-color: $color-primary;
+            transition: background-color .3s ease, color .3s ease;
+            &:hover{
+                background-color: #fff;
+                color: $color-primary;
+            }
+        }
+    }
+}
