@@ -264,7 +264,7 @@ h2 {
   height: auto;
   min-height: 500px;
   padding: 2.5rem;
-  background: url("../../img/probrem.png") no-repeat center/cover;
+  background: url("../img/probrem.png") no-repeat center/cover;
   margin-bottom: 80px;
 }
 @media (min-width: 768px) {
